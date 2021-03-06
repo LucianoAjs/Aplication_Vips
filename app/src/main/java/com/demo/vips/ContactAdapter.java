@@ -19,11 +19,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
-/**
- * Created by Belal on 10/18/2017.
- */
-
-
 public class ContactAdapter extends RecyclerView.Adapter<ContactAdapter.ProductViewHolder> {
 
     int custom_list_item;
