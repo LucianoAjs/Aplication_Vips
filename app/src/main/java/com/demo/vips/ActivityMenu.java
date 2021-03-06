@@ -4,6 +4,7 @@ package com.demo.vips;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,7 +25,7 @@ public class ActivityMenu extends AppCompatActivity {
     SQLiteDatabase mDatabase;
     ContactAdapter adapter;
     EditText e_number;
-    Button bt_save;
+    Button bt_save, btn_update;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +42,7 @@ public class ActivityMenu extends AppCompatActivity {
 
         e_number = (EditText) findViewById(R.id.e_Number);
         bt_save = (Button) findViewById(R.id.btn_save);
+        btn_update = (Button) findViewById(R.id.btn_update);
 
         bt_save.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,10 +74,21 @@ public class ActivityMenu extends AppCompatActivity {
 
             }
         });
+
+        btn_update.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+                ///Codigo aqui
+            }
+        });
+
+
     }
 
     private void showNumbersFromDatabase() {
         //we used rawQuery(sql, selectionargs) for fetching all the employees
+
         Cursor cursorproduct = mDatabase.rawQuery("SELECT * FROM Contact", null);
         List<com.demo.vips.Contact> contactList = new ArrayList<>();
 

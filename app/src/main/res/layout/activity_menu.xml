@@ -10,27 +10,25 @@
 
     <Button
         android:id="@+id/btn_save"
-        android:layout_width="44dp"
-        android:layout_height="50dp"
+        android:layout_width="38dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/addnumber"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113"/>
+        app:layout_constraintStart_toEndOf="@+id/e_Number"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
     <Button
         android:id="@+id/btn_update"
-        android:layout_width="44dp"
-        android:layout_height="50dp"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
         android:background="?android:attr/actionModeWebSearchDrawable"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/e_Number"
         app:layout_constraintHorizontal_bias="00"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
     <TextView
         android:id="@+id/textView45"
@@ -44,48 +42,50 @@
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintVertical_bias="0.01" />
 
     <EditText
         android:id="@+id/e_Number"
-        android:layout_width="280dp"
-        android:layout_height="50dp"
+        android:layout_width="205dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/input"
-        android:focusable="true"
         android:clickable="false"
+        android:focusable="true"
         android:focusableInTouchMode="true"
         android:hint="Enter a number to add"
         android:textAlignment="center"
-        android:textSize="50px"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20px"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="219dp"
+        android:layout_height="286dp"
+        android:layout_marginTop="80dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873"
+        app:layout_constraintTop_toBottomOf="@+id/e_Number"
         app:srcCompat="@drawable/businessman" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:saveEnabled="true"
         android:id="@+id/recyclerView"
-        android:layout_width="381dp"
-        android:layout_height="338dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="278dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="20dp"
+        android:saveEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/e_Number" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

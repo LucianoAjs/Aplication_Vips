@@ -14,7 +14,7 @@
         <activity
             android:name="com.demo.vips.ActivityMenu"
             android:configChanges="keyboardHidden"
-            android:windowSoftInputMode="stateVisible|adjustPan"/>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
         <activity android:name="com.demo.vips.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
