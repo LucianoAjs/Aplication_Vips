@@ -7,5 +7,3 @@ It is embedded in android bydefault. So, there is no need to perform any databas
 
 Here, we are going to see the example of sqlite to store and fetch the data. Data is displayed in the logcat. For displaying data on the spinner, move to the next page.
 
-SQLiteOpenHelper class provides the functionality to use the SQLite database.
-

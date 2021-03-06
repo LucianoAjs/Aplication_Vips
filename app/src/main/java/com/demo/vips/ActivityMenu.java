@@ -65,6 +65,7 @@ public class ActivityMenu extends AppCompatActivity {
                     //this time it has two parameters
                     //first is the sql string and second is the parameters that is to be binded with the query
                     mDatabase.execSQL(insertSQL, new String[]{number});
+                    ((EditText) findViewById(R.id.e_Number)).setText("");
                     Toast.makeText(ActivityMenu.this, "Great! Data Saved", Toast.LENGTH_SHORT).show();
                     adapter.reloadContactsFromDatabase();
                 }
