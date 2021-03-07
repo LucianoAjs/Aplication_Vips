@@ -51,7 +51,6 @@ public class ActivityMenu extends AppCompatActivity {
                 //Get the Enter data
                 String number = e_number.getText().toString().trim();
 
-
                 if (number.isEmpty() ) {
 
                     Toast.makeText(ActivityMenu.this, "Fil the field", Toast.LENGTH_SHORT).show();
